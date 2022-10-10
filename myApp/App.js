@@ -1,24 +1,7 @@
-import React from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
- 
+import React from 'react';
+import {BottomTab} from './src/Navigation/bottomtabnavigator';
+import HomeNavigation from './src/Navigation/homeStackNavigation';
+
 export default function App() {
- 
-  return (
-    <View style={styles.container}>        
-        <Text>Hello world</Text>
-    </View>
-  );
+  return <BottomTab />;
 }
- 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
